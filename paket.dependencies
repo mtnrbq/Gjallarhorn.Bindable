@@ -20,3 +20,9 @@ group Test
 	nuget NUnit3TestAdapter 3.9.0 
 	nuget NUnit.ConsoleRunner ~> 3
 	nuget FSharp.Core 4.3.3
+
+group WpfSamples
+  source https://api.nuget.org/v3/index.json
+  framework: net461
+  nuget FsXaml.Wpf
+  nuget FSharp.Core 4.3.3
