@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
+    <LocalReferenceAssemblies>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1</LocalReferenceAssemblies>
+  </PropertyGroup>
+  <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
   <PropertyGroup>
@@ -32,13 +35,13 @@
       <HintPath>..\..\..\Gjallarhorn\bin\Gjallarhorn.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\PresentationCore.dll</HintPath>
+      <HintPath>$(LocalReferenceAssemblies)\PresentationCore.dll</HintPath>
     </Reference>
     <Reference Include="PresentationFramework">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\PresentationFramework.dll</HintPath>
+      <HintPath>$(LocalReferenceAssemblies)\PresentationFramework.dll</HintPath>
     </Reference>
     <Reference Include="WindowsBase">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\WindowsBase.dll</HintPath>
+      <HintPath>$(LocalReferenceAssemblies)\WindowsBase.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Import Project="..\..\.paket\Paket.Restore.targets" />
