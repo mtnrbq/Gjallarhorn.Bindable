@@ -34,6 +34,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Gjallarhorn">
+      <HintPath>..\..\..\..\Gjallarhorn\bin\Gjallarhorn.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -95,25 +98,25 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\src\Gjallarhorn.Bindable.Wpf\Gjallarhorn.Bindable.Wpf.fsproj">
-      <Project>{79269e6a-2c7e-442d-8b23-55b6d940a5d2}</Project>
+      <Project>{FB784D20-9375-4587-A189-0D1FBF3E2640}</Project>
       <Name>Gjallarhorn.Bindable.Wpf</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\src\Gjallarhorn.Bindable\Gjallarhorn.Bindable.fsproj">
-      <Project>{dc46e916-06fc-4256-acfc-ebc7c9dc95ea}</Project>
+      <Project>{EDA3EC39-0AFB-4A05-9926-D128B9325420}</Project>
       <Name>Gjallarhorn.Bindable</Name>
     </ProjectReference>
     <ProjectReference Include="..\ElmInspiredOne\ElmInspiredOne.fsproj">
-      <Project>{350db7f3-951f-4a79-a33e-b9dad42704a5}</Project>
+      <Project>{7BDAE80E-995F-45D9-B034-CCF4FE226314}</Project>
       <Name>ElmInspiredOne</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\..\..\.paket\paket.targets" />
   <Choose>
-    <When Condition="$(TargetFrameworkIdentifier) == '.NETStandard' And $(TargetFrameworkVersion) == 'v2.0'">
+    <When Condition="$(TargetFrameworkIdentifier) == '.NETFramework' And $(TargetFrameworkVersion) == 'v4.6.1'">
       <ItemGroup>
         <Reference Include="FSharp.Core">
-          <HintPath>..\..\..\packages\FSharp.Core\lib\netstandard1.6\FSharp.Core.dll</HintPath>
+          <HintPath>..\..\..\packages\wpfsamples\FSharp.Core\lib\net45\FSharp.Core.dll</HintPath>
           <Private>True</Private>
           <Paket>True</Paket>
         </Reference>

@@ -9,7 +9,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>WpfElmInspiredOne</RootNamespace>
     <AssemblyName>WpfElmInspiredOne</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFSharpCoreVersion>4.3.1.0</TargetFSharpCoreVersion>
     <Name>WpfElmInspiredOne</Name>
@@ -39,6 +39,9 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Gjallarhorn">
+      <HintPath>..\..\..\..\..\..\source\repos\Gjallarhorn\bin\Gjallarhorn.dll</HintPath>
+    </Reference>
     <Reference Include="mscorlib" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -57,17 +60,17 @@
   <ItemGroup>
     <ProjectReference Include="..\..\..\src\Gjallarhorn.Bindable.Wpf\Gjallarhorn.Bindable.Wpf.fsproj">
       <Name>Gjallarhorn.Bindable.Wpf</Name>
-      <Project>{79269e6a-2c7e-442d-8b23-55b6d940a5d2}</Project>
+      <Project>{FB784D20-9375-4587-A189-0D1FBF3E2640}</Project>
       <Private>True</Private>
     </ProjectReference>
     <ProjectReference Include="..\..\..\src\Gjallarhorn.Bindable\Gjallarhorn.Bindable.fsproj">
       <Name>Gjallarhorn.Bindable</Name>
-      <Project>{dc46e916-06fc-4256-acfc-ebc7c9dc95ea}</Project>
+      <Project>{EDA3EC39-0AFB-4A05-9926-D128B9325420}</Project>
       <Private>True</Private>
     </ProjectReference>
     <ProjectReference Include="..\ElmInspiredOne\ElmInspiredOne.fsproj">
       <Name>ElmInspiredOne (samples\ElmInspiredOne\ElmInspiredOne\ElmInspiredOne)</Name>
-      <Project>{350db7f3-951f-4a79-a33e-b9dad42704a5}</Project>
+      <Project>{7BDAE80E-995F-45D9-B034-CCF4FE226314}</Project>
       <Private>True</Private>
     </ProjectReference>
   </ItemGroup>
